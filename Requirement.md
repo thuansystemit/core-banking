@@ -18,7 +18,8 @@
 - A user may own one or more accounts.
 - A user may view all their accounts and transaction history.
 - A user may be marked as active, suspended, or closed.
-** Business Rules**
+
+**Business Rules**
 - Each email or phone number must be unique across all users.
 - Only active users can create or manage accounts.
 - KYC verification is mandatory before activating a user.
@@ -68,6 +69,7 @@
   - Debit source account
   - Credit destination account
   - If either step fails, the transaction must roll back.
+
 **Business Rules**
 - Transaction amounts must be positive.
 - A withdrawal or transfer should fail if balance is insufficient.
