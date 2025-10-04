@@ -44,5 +44,5 @@ jobs:
       - name: Upload core-banking-service JAR
         uses: actions/upload-artifact@v4
         with:
-          name: core-banking-service
+          name: core-banking
           path: core-banking/target/*.jar
