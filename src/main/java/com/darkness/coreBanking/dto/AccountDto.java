@@ -1,7 +1,5 @@
 package com.darkness.coreBanking.dto;
 
-import com.darkness.coreBanking.domain.AccountCurrency;
-import com.darkness.coreBanking.domain.AccountType;
 import com.darkness.coreBanking.domain.Transaction;
 
 import java.math.BigDecimal;

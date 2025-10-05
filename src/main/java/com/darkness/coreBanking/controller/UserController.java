@@ -42,13 +42,13 @@ public class UserController {
     }
 
     @PostMapping
-    public UserDto createUser(@RequestBody UserDto request) {
-        return userService.createUser(request);
+    public ResponseEntity<UserDto> createUser(@RequestBody UserDto request) {
+        return ResponseEntity.ok(userService.createUser(request));
     }
 
     @PutMapping
-    public UserDto updateUser(@RequestBody UserDto request) {
-        return userService.updateUser(request);
+    public ResponseEntity<UserDto> updateUser(@RequestBody UserDto request) {
+        return ResponseEntity.ok(userService.updateUser(request));
     }
 
     @PutMapping("/{pk}/suspended")

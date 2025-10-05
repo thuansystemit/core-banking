@@ -13,6 +13,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 @Service
@@ -38,12 +39,15 @@ public class UserServiceImpl implements UserService {
                         String.format("Invalid country code = [%s]", request.getCountryCode())));
 
         User user = new User();
+        LocalDateTime createdAt = LocalDateTime.now();
         user.setAddress(request.getAddress());
         user.setFullName(request.getFullName());
         user.setEmail(request.getEmail());
         user.setPhone(request.getPhone());
         user.setCountry(country);
         user.setStatus(UserStatus.ACTIVE);
+        user.setCreatedAt(createdAt);
+        user.setUpdatedAt(createdAt);
 
         return  toDTO(userRepository.save(user));
     }
