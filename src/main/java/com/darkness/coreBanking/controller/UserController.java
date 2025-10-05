@@ -18,6 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
 
+/**
+ * @author darkness
+ **/
 @RestController
 @RequestMapping("/api/user")
 public class UserController {

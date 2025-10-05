@@ -7,6 +7,9 @@ import org.springframework.data.domain.Pageable;
 
 import java.util.Optional;
 
+/**
+ * @author darkness
+ **/
 public interface UserService {
     /**
      * Create a new user

@@ -5,6 +5,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
+/**
+ * @author darkness
+ **/
 @Component("auditorProvider")
 public class AuditorAwareImpl implements AuditorAware<String> {
 

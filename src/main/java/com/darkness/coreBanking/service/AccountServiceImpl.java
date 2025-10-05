@@ -4,7 +4,6 @@ import com.darkness.coreBanking.domain.Account;
 import com.darkness.coreBanking.domain.AccountCurrency;
 import com.darkness.coreBanking.domain.AccountStatus;
 import com.darkness.coreBanking.domain.User;
-import com.darkness.coreBanking.domain.UserStatus;
 import com.darkness.coreBanking.dto.AccountDto;
 import com.darkness.coreBanking.exception.AccountNotFoundException;
 import com.darkness.coreBanking.exception.UserNotFoundException;
@@ -17,6 +16,9 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 
+/**
+ * @author darkness
+ **/
 @Service
 public class AccountServiceImpl implements AccountService {
     private final AccountRepository accountRepository;

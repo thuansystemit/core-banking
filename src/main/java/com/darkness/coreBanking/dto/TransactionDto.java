@@ -2,6 +2,9 @@ package com.darkness.coreBanking.dto;
 
 import java.math.BigDecimal;
 
+/**
+ * @author darkness
+ **/
 public class TransactionDto {
     private BigDecimal amount;
 

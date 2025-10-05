@@ -6,6 +6,9 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author darkness
+ **/
 public class AccountDto {
 
     private Long pk;

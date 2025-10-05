@@ -6,6 +6,9 @@ import jakarta.validation.constraints.NotEmpty;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author darkness
+ **/
 public class UserDto {
     private Long pk;
     @NotEmpty(message = "FullName not empty")
