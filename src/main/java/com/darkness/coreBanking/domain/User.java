@@ -10,6 +10,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +24,8 @@ public class User extends BaseEntity {
     @Column(name = "full_name")
     private String fullName;
 
-    @Column(name = "email", nullable = false)
+    @Email
+    @Column(name = "email", nullable = false, unique = true)
     private String email;
 
     @Column(name = "phone")
@@ -89,5 +91,13 @@ public class User extends BaseEntity {
 
     public void setAccounts(List<Account> accounts) {
         this.accounts = accounts;
+    }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public void setCountry(Country country) {
+        this.country = country;
     }
 }
